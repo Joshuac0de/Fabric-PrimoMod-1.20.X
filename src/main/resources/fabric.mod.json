@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "toolsadvanced",
+	"version": "${version}",
+	"name": "Tools Advanced",
+	"description": "This is my first mod! Is a mod for a easy miner, add two variations of vanilla tools!",
+	"authors": [
+		"Onigx"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/toolsadvanced/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.onigx.toolsadvanced.ToolsAdvanced"
+		],
+		"client": [
+			"net.onigx.toolsadvanced.ToolsAdvancedClient"
+		],
+		"fabric-datagen": [
+			"net.onigx.toolsadvanced.ToolsAdvancedDataGenerator"
+		]
+	},
+	"mixins": [
+		"toolsadvanced.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
